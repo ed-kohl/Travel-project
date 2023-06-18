@@ -125,6 +125,11 @@ margin-top:0;
     padding: 0 30px 30px;
 }
 
+.card img {
+    aspect-ratio:3/2;
+}
+
+
 .btn {
     display: block;
     color: white;

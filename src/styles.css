@@ -23,7 +23,15 @@ body {
 }
 
 
+.table-small{
+    border:solid 1px darkgrey;
+    width:100%;
+    margin-top:40px;
+}
 
+.table-small thead{
+    font-weight:600;
+}
 
 
 
@@ -49,6 +57,11 @@ margin-top:0;
 }
 .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr;
+}
+
+.map{
+    max-width:700px;
+    aspect-ratio: 2/1;
 }
 }
 @media(min-width:901px){

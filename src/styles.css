@@ -1,6 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
-    background: #272044;
+    background: #040100;
 }
 
 .container {
@@ -22,16 +22,62 @@ body {
     display: block;
 }
 
-.grid-2-columns {
-    grid-template-columns: 1fr 1fr;
-}
 
-.grid-3-columns {
-    grid-template-columns: 1fr 1fr 1fr;
+
+
+
+
+@media(max-width:900px){
+
+header h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        margin: 30px 0;}
+
+.grid-2-columns {
+        grid-template-columns: 1fr;
+        margin-top:0px;
+    }
+
+.grid-3-columns{
+grid-template-columns:1fr;
+grid-template-rows:1fr 1fr 1fr;
+
+margin-top:0;
+
 }
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr;
+}
+}
+@media(min-width:901px){
+
+    header h1 {
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 1;
+            margin: 30px 0;}
+
+            blockquote{
+                margin-right:auto;
+                margin-left:auto;
+            }
+.grid-2-columns {
+            grid-template-columns: 1fr 1fr;
+            margin-top:0px;
+        }
+.grid-3-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        align-items:center;
+        margin-top:0;
+
+    }
 
 .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 2fr 2fr;
+}
 }
 
 .embed {
@@ -40,18 +86,24 @@ body {
 }
 
 .instagram-embeds {
+    display:flex;
     margin: 30px 0;
 }
 
 .card {
     background: white;
     margin: 30px 0;
+    
 }
 
 .card-header.grid {
     grid-gap: 0;
+ 
 }
 
+.card-header{
+    margin-top:0;
+}
 .card-body {
     padding: 30px;
 }
@@ -70,7 +122,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 16px;
-    background-color: #462cb3;
+    background-color: #040100;
     text-decoration: none;
 }
 
@@ -100,6 +152,7 @@ header h1 {
     line-height: 1;
     margin: 30px 0;
 }
+
 
 header h2 {
     font-weight: 400;
@@ -181,8 +234,8 @@ main p {
 
 footer {
     color: white;
-    background-image: linear-gradient(rgba(39, 32, 68, 0.9),
-            rgba(39, 32, 68, 0.9)),
+    background-image: linear-gradient(rgba(4, 1, 0, 0.5),
+            rgba(4, 1, 0, 0.9)),
         url("../images/nordlinger-ries-3653766_1280.jpg");
 
     background-repeat: no-repeat;
@@ -200,4 +253,18 @@ footer p {
     font-size: 16px;
     opacity: 0.7;
     line-height: 24px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    
+}
+footer a:hover{
+    color:white;
+    text-decoration:underline;
+}
+
+footer a:visited{
+    color:antiquewhite;
 }

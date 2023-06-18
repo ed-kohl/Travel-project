@@ -102,6 +102,11 @@ margin-top:0;
     display:flex;
     margin: 30px 0;
 }
+.instagram-media{
+    margin-top:0px;
+width:fit-content;
+height:460px;
+}
 
 .card {
     background: white;
